@@ -1,0 +1,30 @@
+body{
+	background-image: url(https://ak6.picdn.net/shutterstock/videos/1027713866/thumb/10.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.div1{
+	float: left;
+	/*margin-left:15%;	*/
+}
+.form1{
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 25px;
+	width: 300px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	margin: 20px;
+	border: 1px solid red;
+	text-align: left;
+}
+.form2{
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 25px;
+	width: 300px;
+	padding-top: 25px;
+	margin: auto;
+	border: 1px solid red;
+	text-align: center;
+}
+
