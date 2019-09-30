@@ -11,7 +11,7 @@ nav{
     display: flex;
     width: 100%;
     height: 80px;
-    background-color: #c80d0d;
+    background-color: #C80D0D;
     color: white;
     background-size: cover;
     padding-left:10px;
@@ -23,24 +23,21 @@ nav{
 }
 
 .floatingbutton{
-    width: 75px;
-    height: 75px;
-    background-color:#F3F1F1;
-    border-radius: 50px;
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 70px;
+	display: inline-block;
+	block;
+    margin: 50px;
 }
-/* .home{
-    width: 500px;
-} */
+
+
 .content{
     width: 100%;
     height: 200px;
     text-align: center;
     color: #ffffff;
-    padding-top:10%;
+    padding-top:3%;
     padding-bottom: 40%;
     font-family: "custom font", bah;
     font-size: 30px; 
@@ -51,6 +48,6 @@ nav{
 
 .darah{
     width: 100%;
-    height: 400px;
+    height: 765px;
     background-color: black;
 }
