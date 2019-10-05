@@ -3,51 +3,195 @@
     padding: 0;
 }
 
-@font-face {
-    font-family: "custom font";
-    src: url('asset/bahnschrift.ttf') format('truetype');
+html{
+    scroll-behavior: smooth;
 }
+
+@font-face {
+    src: url('asset/bahnschrift.ttf');
+    font-family: Bahn;
+}
+
+/* navigation bar styling */
 nav{
+    z-index: 9999;
     display: flex;
     width: 100%;
-    height: 80px;
-    background-color: #C80D0D;
-    color: white;
-    background-size: cover;
-    padding-left:10px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-family: Impact;
-    font-size: 30px;
+    height: 60px;
+    background-color: rgba(200,13,13,0.5);
     position: fixed;
+    top: 0;
+    overflow: hidden;
 }
 
-.floatingbutton{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-	display: inline-block;
-	block;
-    margin: 50px;
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 
-.content{
-    width: 100%;
-    height: 200px;
+li{
+    float: left;
+    padding-right: 50px;
+    display: flex;
     text-align: center;
     color: #ffffff;
-    padding-top:3%;
-    padding-bottom: 40%;
-    font-family: "custom font", bah;
-    font-size: 30px; 
-    background:url('/asset/sakit.png'); 
-    background-repeat: no-repeat;
-    background-size: cover; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.darah{
+.navlogo{
+    height: 50px;
+    padding-left: 10px;
+}
+
+.paddingtop{
+    padding-top: 58px;
+}
+
+
+/* floating button styling */
+.floatingbutton{
+    position: fixed;
+	display: flex;
+	flex-direction: column-reverse;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: center;    
+    bottom: 0;
+    right: 0;
+    margin: 50px;
+    width: 10%;
+    height: 10%;
+    z-index: 9999;
+}
+
+.eachbutton{
+    margin-top: 10%;
+    max-width: 40%;
+    min-width: 40px;
+}
+
+/* page belum digarap */
+.defaultpage{
     width: 100%;
-    height: 765px;
+    height: 600px;
+    background-color: blue;
+    border-color: rgb(255, 230, 0);
+    border-style: solid;
+    border-width: 3px;
+    color: white;
+}
+
+
+/* page 1 */
+.landingpage{
+    width: 100%;
+    height: 600px;
+    padding-top:2%;
+    background:url('/asset/sakit.png'); 
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+}
+
+.landingtext{
+    padding-left: 1%;
+    padding-top: 20%;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;    
+}
+
+/* 
+.transparent{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5) 50%,rgba(0,0,0,1)) 50%;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 999;
+} */
+
+
+/* page 2 */
+.bloodstock{
+    width: 100%;
+    height: 650px;
+    padding-top:2%;
     background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logopmi{
+    width: 10%;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.persediaandarah{
+    text-align: center;
+    font-size: 3vw;
+    padding-top: 20px
+}
+
+.kiri{
+    left: 5%;
+    position: absolute;
+}
+
+.kanan{
+    right: 5%;
+    position: absolute;
+}
+
+#contactus{
+    width: 100%;
+    float: left;
+    height: 620px;
+    background-color: aqua;
+}
+
+.contactus{
+    width: 100%;
+    height: inherit;
+    padding-top:2%;
+    background:url('/asset/bgContact.png');
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+}
+
+.formdiv{
+    
+    transform: translateY(40%);
+    height: auto;
+    padding: 20px;
+    float: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.contak{
+    /* text-align: left; */
+}
+
+#bag1{
+    width: 30%; 
+    height: 30px;
+    border-color: aqua;
+    border-width: 0.5px;
+    padding: 0.5%;
+    /* padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%; */
+}
+
+#bag2{
+    width: 30%;
+    height: 150px;
 }

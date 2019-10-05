@@ -9,27 +9,103 @@
 </head>
 
 <body>
+    <div class="paddingtop"></div>
+    
+    <!-- navigation bar -->
     <nav>
-        <img src="asset/logo pmi-13.png">
-        <p>SISTEM INFORMASI PMI</p>
+        <ul>
+        <li>
+            <img class="navlogo" src="asset/logo pmi.png">
+        </li>
+        <li>
+            <a>SISTEM INFORMASI PMI</a>
+        </li>
+        </ul>
     </nav>
+
+    <!-- floating button -->
     <div class="floatingbutton">
-        <img src="/asset/Group 59.png" class="home" alt="" onclick="window.location.href='https://www.google.com'">
-        <img src="/asset/Group 60.png" class="index" alt="" onclick="window.location.href='https://www.google.com'">
-        <img src="/asset/Group 61.png" class="information" alt="" onclick="window.location.href='https://www.google.com'">
-        <img src="/asset/Group 65.png" class="schedule" alt="" onclick="window.location.href='https://www.google.com'">
-        <img src="/asset/Group 64.png" class="kontak" alt="" onclick="window.location.href='https://www.google.com'">
+        <img src="/asset/Group 59.png" class="eachbutton" alt="" onclick="window.location.href='#landingpage'">
+        <img src="/asset/Group 60.png" class="eachbutton" alt="" onclick="window.location.href='#bloodstock'">
+        <img src="/asset/Group 61.png" class="eachbutton" alt="" onclick="window.location.href='#donationprocedure'">
+        <img src="/asset/Group 65.png" class="eachbutton" alt="" onclick="window.location.href='#donationschedule'">
+        <img src="/asset/Group 64.png" class="eachbutton" alt="" onclick="window.location.href='#contactus'">
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class = content>
-        <h1>Donor Darah</h1>
-        <h1>Menyelamatkan Jiwa</h1>
-    </div>
-    <div class="darah"> 
-        <img src="/asset/logo pmi-13.png" alt="">
-    </div>
+
+
+    <!-- page 1 -->
+    <section id="landingpage">
+        <div class="landingpage">
+            <div class="landingtext">
+                <h1>Donor darah</h1>
+                <h2>Selamatkan Jiwa</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- page 2 -->
+    <section id="bloodstock">
+        <div class="bloodstock">
+            <img class="logopmi" src="asset/logo pmi.png">
+            <h1 class="persediaandarah">Persediaan Darah</h1>
+            <div class="kiri" >
+                <div class="goldarA" >
+                    <h1>Golongan Darah A</h1>
+                    <h2>331</h2>
+                    <h3>orang</h3>
+                </div>
+                
+                <div class="goldarAB" >
+                        <h1>Golongan Darah AB</h1>
+                        <h2>331</h2>
+                        <h3>orang</h3>
+                </div>
+            </div>
+            <div class="kanan" >
+                <div class="goldarB" >
+                    <h1>Golongan Darah A</h1>
+                    <h2>331</h2>
+                    <h3>orang</h3>
+                </div>
+                
+                <div class="goldarO" >
+                        <h1>Golongan Darah AB</h1>
+                        <h2>331</h2>
+                        <h3>orang</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- page 3 -->
+    <section id="donationprocedure">
+        <div class="defaultpage">
+            <h1>page 3</h1>
+        </div>
+    </section>
+
+    <!-- page 4 -->
+    <section id="donationschedule">
+        <div class="defaultpage">
+            <h1>page 4</h1>
+        </div>
+    </section>
+
+    <!-- page 5 -->
+    <section id="contactus">
+        <!-- <div class="bgblur" >
+
+        </div> -->
+        <div class="contactus">
+            <div class="formdiv">
+                    <h1>Contact Us</h1>
+            <form class="contak">
+                Email:<br><input id="bag1" value="error@gmail.com" type="text"><br>
+                Nama:<br><input id="bag1" type="text"><br>
+                Pesan:<br><input id="bag2" type="text">
+            </form>            
+            </div>
+        </div>
+    </section>
+
 </html>
