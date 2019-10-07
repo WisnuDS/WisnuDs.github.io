@@ -21,6 +21,7 @@ nav{
     position: fixed;
     top: 0;
     overflow: hidden;
+    box-shadow: 0px 10px 0px rgba(153, 153, 153, 1);
 }
 
 ul{
@@ -80,7 +81,7 @@ a{
 /* page belum digarap */
 .defaultpage{
     width: 100%;
-    height: 650px;
+    height: 600px;
     background-color: blue;
     border-color: rgb(255, 230, 0);
     border-style: solid;
@@ -108,8 +109,9 @@ a{
     font-size: 3vw;    
 }
 
-    z-index: 999;
 /* page 2 */
+
+
 .bloodstock{
     width: 100%;
     height: 650px;
@@ -212,6 +214,67 @@ a{
     font-size: 3vw;
     font-weight: bold;
     margin: auto;
+}
+
+/* page 4 */
+
+#donationschedule{
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    height: 650px;
+    width: 100%;
+    background-color: white;
+}
+#tbcontent{
+    background-color: #faf8f8;
+    height: 150px;
+    width: 350px;
+    position: absolute;
+    border-radius: 18px;
+    margin-left: 200px;
+    overflow: hidden;
+    box-shadow: 5px 5px 0px rgba(153, 153, 153, 0.7);
+}
+
+#title{
+    background-color: rgba(200,13,13,1);
+    height: 30px;
+    width: 350px;
+    position: absolute;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+
+}
+
+#title p{
+    font-size: 20px;
+    color: white;
+    margin: auto;
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+#img{
+    width: 106px;
+    height: 106px;
+    display: inline-block;
+    margin-top: 37px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    border-radius: 18px;
+    background: url('/asset/bgContact.png');
+    background-size: cover;
+    background-position: center; 
+}
+#desription{
+    color: black;
+    font-size: 40px;
+    display: inline-block;
 }
 
 /* page 5 */
