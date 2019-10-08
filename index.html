@@ -82,7 +82,50 @@
         <div class="donationprocedure">
             <h1>PROSEDUR DONOR DARAH</h1>
             <img src="/asset/undraw_doctors_hwty.png">
-            <div id="slider"></div>
+            <div id="slideshow-container">
+                <div class="mySlides">
+                    <p class="slidetitle">1.Tahap Registrasi</p>
+                    <p class="slidecontent">Mengisi formulir pendaftaran dan kuisioner kesehatan</p>
+                  </div>
+
+                <div class="mySlides">
+                    <p class="slidetitle">2.Tahap Pemeriksaan Pendahuluan</p>
+                    <p class="slidecontent">-Pengukuran berat badan</p>
+                    <p class="slidecontent">-Pemeriksaan kadar haemoglobin darah</p>
+                    <p class="slidecontent">-Pemeriksaan golongan darah bagi pendonor pemula</p>
+                </div>
+
+                <div class="mySlides">
+                    <p class="slidetitle">3.Tahap Pemeriksaan Kesehatan oleh Dokter</p>
+                    <p class="slidecontent">-Anamnesis</p>
+                    <p class="slidecontent">-Pemeriksaan tekanan darah</p>
+                    <p class="slidecontent">-Pemeriksaan fisik sederhana</p>
+                </div>
+                
+                <div class="mySlides">
+                    <p class="slidetitle">4.Tahap Pengambilan Darah Donor</p>
+                    <p class="slidecontent">-Cuci lengan donor</p>
+                    <p class="slidecontent">-Pengambilan darah</p>
+                    <p class="slidecontent">-Pengambilan sampel darah</p>
+                </div>
+
+                <div class="mySlides">
+                    <p class="slidetitle">5.Tahap Administrasi</p>
+                    <p class="slidecontent">Mengambil kartu donor dan vitamin</p>
+                </div>
+
+
+                <div class="mySlides">
+                    <p class="slidetitle">6.Tahap Pemulihan</p>
+                    <p class="slidecontent">Pendonor dianjurkan untuk istirahat dan menikmati hidangan ringan yang kami sajikan</p>
+                </div>
+                    
+                      
+                  <a class="prev" onclick="plusSlides(-1)">❮</a>
+                  <a class="next" onclick="plusSlides(1)">❯</a>
+                  
+                  </div>
+            </div>
         </div>
         <div id="quotesjelek" >
             <p>"Setetes Darah Sangat Berarti"</p>
@@ -120,4 +163,28 @@
         </div>
     </section>
 
+    <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              slides[slideIndex-1].style.display = "block";  
+            }
+            </script>    
+    </body>
 </html>
