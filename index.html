@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Testing</title>
     <link rel="stylesheet" href="CSS-style/landing-scc.css">
+    <script src="/Javascript/kasinamasendiri.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,7 @@
             <img class="navlogo" src="asset/logo pmi.png">
         </li>
         <li>
-            <a>SISTEM INFORMASI PMI</a>
+            <a>SISTEM INFORMASI PMII</a>
         </li>
         </ul>
     </nav>
@@ -48,32 +49,34 @@
         <div class="bloodstock">
             <img class="logopmi" src="asset/logo pmi.png">
             <h1 class="persediaandarah">Persediaan Darah</h1>
+            <div class="loss">
             <div class="kiri" >
                 <div class="goldarA" >
                     <h1>Golongan Darah A</h1>
                     <h2>331</h2>
-                    <h3>orang</h3>
+                    <h3>Kantong</h3>
                 </div>
                 
                 <div class="goldarAB" >
                         <h1>Golongan Darah AB</h1>
                         <h2>331</h2>
-                        <h3>orang</h3>
+                        <h3>Kantong</h3>
                 </div>
             </div>
             <div class="kanan" >
                 <div class="goldarB" >
-                    <h1>Golongan Darah A</h1>
+                    <h1>Golongan Darah B</h1>
                     <h2>331</h2>
-                    <h3>orang</h3>
+                    <h3>Kantong</h3>
                 </div>
                 
                 <div class="goldarO" >
-                        <h1>Golongan Darah AB</h1>
+                        <h1>Golongan Darah O</h1>
                         <h2>331</h2>
-                        <h3>orang</h3>
+                        <h3>Kantong</h3>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -121,10 +124,20 @@
                 </div>
                     
                       
-                  <a class="prev" onclick="plusSlides(-1)">❮</a>
-                  <a class="next" onclick="plusSlides(1)">❯</a>
-                  
+                <div class="slidebutton">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                      <div class="dot-container">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                          <span class="dot" onclick="currentSlide(4)"></span>
+                          <span class="dot" onclick="currentSlide(5)"></span>
+                          <span class="dot" onclick="currentSlide(6)"></span>
+                      </div>
                   </div>
+                </div>
+
             </div>
         </div>
         <div id="quotesjelek" >
@@ -148,43 +161,26 @@
 
     <!-- page 5 -->
     <section id="contactus">
-        <!-- <div class="bgblur" >
-
-        </div> -->
-        <div class="contactus">
-            <div class="formdiv">
-                    <h1>Contact Us</h1>
-            <form class="contak">
-                Email:<br><input id="bag1" value="error@gmail.com" type="text"><br>
-                Nama:<br><input id="bag1" type="text"><br>
-                Pesan:<br><input id="bag2" type="text">
-            </form>            
+        <div class="form-container">
+            <div class="formtitle">
+                <h1>Contact Us</h1>
             </div>
+            
+            <form>
+                <p>Email:</p>
+                <input class="Email" type="text"><br>
+                <p>Nama:</p>
+                <input class="Nama" type="text"><br>
+                <p>Pesan:</p>
+                <input class="Pesan" type="text"><Br>
+            </form>
         </div>
+        <div class="cpoverlay"></div>
     </section>
 
     <script>
-            var slideIndex = 1;
             showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                  slides[i].style.display = "none";  
-              }
-              slides[slideIndex-1].style.display = "block";  
-            }
-            </script>    
+    </script>  
+      
     </body>
 </html>
