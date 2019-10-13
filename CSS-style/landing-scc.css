@@ -367,6 +367,7 @@ a{
     border-radius: 18px;
     margin-left: 200px;
     overflow: hidden;
+    align-items: center;
     box-shadow: 5px 5px 0px rgba(153, 153, 153, 0.7);
 }
 
@@ -395,7 +396,8 @@ a{
 #img{
     width: 106px;
     height: 106px;
-    display: inline-block;
+    display: flex;
+    position: absolute;
     margin-top: 37px;
     margin-bottom: 7px;
     margin-left: 10px;
@@ -405,9 +407,15 @@ a{
     background-position: center; 
 }
 #desription{
-    color: black;
-    font-size: 40px;
-    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* margin-top: 37px; */
+    /* margin-bottom: 7px; */
+    /* margin-left: 10px; */
 }
 
 /* page 5 */
@@ -429,18 +437,21 @@ a{
     width: 100%;
     height: 100%;
     position: absolute;
+    /* align-items: center;; */
 }
 .form-container{
-    background-color: rgba(200,13,13,1);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
     width: 30%;
-    height: 70%;
+    height: fit-content;
+    /* background-color: yellow; */
     margin: 0 auto;
     z-index: 1;
-    /* text-align: center; */
+    overflow: hidden;
 }
 
 .formtitle{
-    background-color: blue;
+    /* background-color: blue; */
     width: 100%;
     height: 10%;
     top: 0;
@@ -448,24 +459,113 @@ a{
     display: flex;
     position: relative;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .formtitle h1{
     font-size: 3vw;
     margin: 0 auto;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .form-container p{
-    /* padding-top: 20px; */
-    /* margin-left: 10px; */
-    /* padding-left: 10px; */
+    padding-left: 10px;
 }
 
 .email, .nama, .pesan{
-    left: 0;
-    float: left;
+    width: 100%;
+    height: 2vw;
+    padding: 0;
+    border-radius: 0.3vw;
+    padding-left: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.pesan{
+    height: 13vw;
+    padding: 0.5vw;
+}
+
+.email:focus , .nama:focus, .pesan:focus{
+    background-color: rgb(230, 230, 230);
+}
+
+.buttonplacer{
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.form-container button{
+    width: 100%;
+    background-color: rgba(200,13,13,1);
+    padding: 0;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1vw;
+    height: 3vw;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.form-container button:active{
+    background-color: rgb(161, 2, 2);
+}
+
+.sosmedcontainer{
+    /* background-color: red; */
     position: absolute;
+    margin: 0 auto;
+    height: 13%;
+    width: 30%;
+    /* left: 50%; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.instagram{
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    height: 5vw;
+    /* left: 50%; */
+    /* position: absolute; */
+    /* background-color: royalblue; */
+    align-items: center;
+}
+
+.twitter{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    width: 50%;
+    height: 5vw;
+    /* right: 50%; */
+    /* position: absolute; */
+    /* background-color: seagreen; */
+
+}
+
+.iglogo, .twlogo{
+    margin-left: 10px;
+    position: absolute;
+    height: 2.5vw;
+    width: 2.5vw;
+    background: url("/asset/instagram\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+
+.twlogo{
+    background: url("/asset/twitter.png");
+}
+
+.sosmedcontainer a{
+    margin-left: 60px;
+    font-size: 1vw;
+    font-family: monospace;
+    color: lightblue;
 }
