@@ -60,16 +60,6 @@ let moresch = document.querySelector("#moreschedule");
 // var schedule = document.getElementsByClassName('tbcontent');
 let schedule = document.querySelector('.tbcontent');
 var schedul = document.getElementsByClassName("tbcontent");
-// alert(schedul);
-// alert(schedule);
-// alert(schedule.length);
-
-function hideelement(){
-    for (i=4; i<= schedul.length; i++){
-        schedul[i].style.display = "none";
-    } 
-}
-// hideelement();
 
 moresch.addEventListener('click', function(){
     var i;
@@ -77,10 +67,10 @@ moresch.addEventListener('click', function(){
     // for (i=2; i<=schedul.length; i++){
     //     schedul[i].style.display = "none";
     // }
-    if (schedul[1].style.display === 'none'){
+    if (schedul[4].style.display === 'none'){
         alert("true");
-        for (i=2; i<= schedul.length; i++){
-            schedul[i].style.display = 'none';
+        for (i=4; i<= schedul.length; i++){
+            schedul[i].style.display = 'flex';
         }
         // schedul[3].style.display = "none";
     } else if (schedul[4].style.display = "flex") {
@@ -88,31 +78,22 @@ moresch.addEventListener('click', function(){
         for (i=4; i<= schedul.length; i++){
             schedul[i].style.display = "none";
         }
+        document.getElementById("moreee").innerHTML = "tampilkan kurang";
     } 
-        
-    
-        
-        // schedul.style.display = "flex";
-    
-    // if (schedule.style.display === "flex"){
-    //     alert("true");
-    //     for (i=4; i<= schedule.length; i++){
-    //         schedule[i].style.display = "none";
-    //     }
-    //     // bloodspage.style.height = "1000px";
-    // } else{
-    //     alert("false");
-    //     if (schedule.style.display === "none"){
-    //         alert("false");
-    //         for (i=4; i<= schedule.length; i++){
-    //             schedule[i].style.display = "flex";
-    //         }
-    //     // schedule.style.display = "none";
-    //     // schedule[0].style.height = "650px";
-    //     }}
+
     alert("under maintenance")
     
 })
+
+function less(){
+    // var schedul = document.getElementsByClassName("tbcontent");
+    for (i=4; i<= schedul.length; i++){
+        schedul[i].style.display = "none";
+        // document.getElementsByClassName("tbcontent")[4].style.display = "none";
+    }
+}
+less();
+
 
 // moresch.addEventListener('click', function(){
 //     alert(schedule.length);
