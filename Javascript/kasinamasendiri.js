@@ -56,16 +56,44 @@ function showSchedule(){
 }
 
 let moresch = document.querySelector("#moreschedule");
-// let schedule = document.querySelector('.tbcontent');
-var schedule = document.getElementsByClassName('tbcontent');
-// schedule[0].style.display = "none";
-console.log(schedule.length);    
+// console.log(schedule.length);    
+// var schedule = document.getElementsByClassName('tbcontent');
+let schedule = document.querySelector('.tbcontent');
+var schedul = document.getElementsByClassName("tbcontent");
+// alert(schedul);
+// alert(schedule);
 // alert(schedule.length);
 
+function hideelement(){
+    for (i=4; i<= schedul.length; i++){
+        schedul[i].style.display = "none";
+    } 
+}
+// hideelement();
+
 moresch.addEventListener('click', function(){
-    alert(schedule.length);
+    var i;
     alert("masuk");
-    // alert(schedule.length);
+    // for (i=2; i<=schedul.length; i++){
+    //     schedul[i].style.display = "none";
+    // }
+    if (schedul[1].style.display === 'none'){
+        alert("true");
+        for (i=2; i<= schedul.length; i++){
+            schedul[i].style.display = 'none';
+        }
+        // schedul[3].style.display = "none";
+    } else if (schedul[4].style.display = "flex") {
+        alert("false");
+        for (i=4; i<= schedul.length; i++){
+            schedul[i].style.display = "none";
+        }
+    } 
+        
+    
+        
+        // schedul.style.display = "flex";
+    
     // if (schedule.style.display === "flex"){
     //     alert("true");
     //     for (i=4; i<= schedule.length; i++){
@@ -78,11 +106,29 @@ moresch.addEventListener('click', function(){
     //         alert("false");
     //         for (i=4; i<= schedule.length; i++){
     //             schedule[i].style.display = "flex";
-    //     }
+    //         }
     //     // schedule.style.display = "none";
     //     // schedule[0].style.height = "650px";
+    //     }}
+    alert("under maintenance")
+    
+})
 
-    // }
-    // alert("under maintenance")}
+// moresch.addEventListener('click', function(){
+//     alert(schedule.length);
+//     alert("masuk");
+//     for (i=1; i<= schedule.length; i++){
+//     schedule[i].style.display = "none";}
+// });
+
+
+function openpage(){
+    alert("halaman ini sedang dalam masa perkembangan");
+    document.getElementById("maintenance").style.display = "none";
+    
 }
-)
+
+var openbutton = document.getElementsByClassName("keepliat");
+// openbutton.addEventListener('click',function(){
+//     maintenancepage.style.display = "none";
+// })
