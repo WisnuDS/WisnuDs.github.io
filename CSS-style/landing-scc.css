@@ -64,7 +64,7 @@ a{
 	justify-content: flex-start;
 	align-items: flex-end;
 	align-content: center;    
-    bottom: 0px;
+    bottom: 0;
     right: 0px;
     margin: 5%;
     width: 10%;
@@ -78,9 +78,11 @@ a{
     min-width: 40px;
     /* opacity: 0.8; */
     filter: brightness(80%);
+    transition: 0.5s;
 }
 
 .eachbutton:hover{
+    transition: 0.5s;
     cursor: pointer;
     /* opacity: 1; */
     filter: brightness(100%);
@@ -127,6 +129,8 @@ a{
 
 
 #bloodstock{
+    top: 30%;
+    position: absolute;
     width: 100%;
     height: 650px;
     padding-top: 6%;
@@ -148,21 +152,44 @@ a{
 .persediaandarah{
     text-align: center;
     font-size: 3vw;
+    font-weight: bold;
     padding-top: 1vw;
     /* margin-bottom: ; */
 }
 
-.kiri , .kanan{
-    top: 50%;
+.bloodstock{
+    display: block;
+}
+.goldarA{
+    top: 40%;
     font-size: 1.2vw;
     margin-left: 10%;
     position: absolute;
     text-align: center;
 }
-.kanan{
+.goldarB{
+    top: 40%;
     right: 10%;
+    font-size: 1.2vw;
+    text-align: center;
+    position: absolute;
 }
 
+.goldarAB{
+    font-size: 1.2vw;
+    text-align: center;
+    position: absolute;
+    margin-left: 20%;
+    top: 55%;
+}
+
+.goldarO{
+    font-size: 1.2vw;
+    text-align: center;
+    position: absolute;
+    right: 20%;
+    top: 55%;
+}
 
 .bloodstock h1{
     margin-top: 20px;
@@ -180,24 +207,50 @@ a{
     font-size: 17px;
 }
 
-
-.kanan .goldarB h1{
+.buttonformore{
+    width: 100%;
+    height: 5vw;
+    /* background-color: red; */
+    position: absolute;
     display: flex;
+    bottom: 10vw;
+    margin: 0 auto;
+    /* text-align: center; */
+    align-items: center;
 }
-/* 
-.goldarAB{
-    margin-left: 250px;
-} */
-/* 
-.goldarO h1,h2,h3{
-    margin-right: 250px;
-} */
+
+#lessmore{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(190, 190, 190); */
+    border: none;
+    background-color: rgba( 0,0,0,0);
+    background-color: rgba(207, 207, 207,0.05);
+    margin: 0 auto;
+    width: 15vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    height: 4vw;
+    /* transition: 0.5s; */
+}
+
+#lessmore p{
+    margin: 0 auto;
+}
+
+#lessmore:hover{
+    transition: 0.5s;
+    background-color: rgba(200,13,13,0.7);
+}
 
 /* page 3 */
 #donationprocedure{
     padding-top: 80px;
     width: 100%;
-    height: 850px;
+    height: 750px;
     background-color: white;
 }
 
@@ -226,7 +279,7 @@ a{
     width: 25%;
     height: 32vw;
     margin-right: 10%;
-    box-shadow: 10px 10px 0px rgba(153, 153, 153, 0.5);
+    box-shadow: 10px 10px rgba(153, 153, 153, 0.5);
     float: right;
     position: relative;
     background-color: rgba(200,13,13,1);
@@ -242,6 +295,7 @@ a{
     color: white;
     display: none;
     padding: 7%;
+    /* transition: 1s; */
     /* padding: 80px; */
     /* text-align: center; */
   }
@@ -303,8 +357,11 @@ a{
 
   .dot-container {
     width: 40%;
-      display: flex;
-      margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    padding: 0.1vw;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 1vw;
   }
   
   /* The dots/bullets/indicators */
@@ -314,15 +371,23 @@ a{
     cursor: pointer;
     height: 1vw;
     width: 1vw;
-    background-color: white;
-    border-radius: 50%;
+    background-color: #888;
+    border-radius: 1vw;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    /* transition: background-color 0.6s ease; */
+    transition: 0.3s;
   }
   
   /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: #717171;
+  .active {
+    background-color: white;
+    border-radius: 1vw ;
+}
+
+.dot:hover {
+    background-color: white;
+    width: 1.5vw;
+    
   }
   
 
@@ -351,19 +416,42 @@ a{
 
 /* page 4 */
 
-.jadwalcontainer{
-    border-width: 20px;
-    width: 50%;
-}
 #donationschedule{
-    border-width: 5px;
+    /* border-width: 5px;
     border-style: solid;
-    border-color: black;
+    border-color: black; */
     height: 650px;
     width: 100%;
+    padding-top: 6%; ;
     background-color: white;
 }
-#tbcontent{
+
+#dstitle{
+    color: rgba(200,13,13,1);
+    font-size: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 5px 5px 0px rgba(0,0,0,0.3);
+    /* margin-top: 27%; */
+    margin-bottom: 3%;
+}
+
+
+
+.jadwal-container{
+    margin: 0 auto;
+    width: 70vw;
+    height: 200px;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.tbcontent{
+    margin: 0 auto;
     background-color: #faf8f8;
     height: 150px;
     width: 350px;
@@ -412,7 +500,7 @@ a{
 #description{
     width: 60%;
     height: 25%;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     position: absolute;
     margin-left: 35%;
@@ -470,6 +558,42 @@ a{
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
+}
+
+.buttondiv{
+    width: 100%;
+    height: 5vw;
+    bottom: 5vw;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+}
+
+#moreschedule{
+    margin: 0 auto;
+    display: flex;
+    /* position: absolute; */
+    /* bottom: 0; */
+    align-items: center;
+    /* border: 1px solid rgb(190, 190, 190); */
+    border: none;
+    width: 15vw;
+    height: 4vw;
+    background-color: rgba(200,13,13,1);
+    border-radius: 1vw;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5vw;
+    transition: 0.5s;
+}
+
+#moreschedule:hover{
+    background-color: rgb(105, 0, 0);
+}
+
+#moreschedule p{
+    margin: 0 auto;
 }
 
 /* page 5 */
