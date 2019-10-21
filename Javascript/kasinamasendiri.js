@@ -26,28 +26,10 @@ function showSlides(n) {
 }
 
 
-// function showMoreBlood(){
-//     var lessblood = document.querySelector('.bloodstock');
-//     if (lessblood.style.display === "block"){
-//         lessblood.style.display = "none";
-//     } else{
-//         lessblood.style.display = "block";
-//     }
-// }
-
-
 let bloods = document.querySelector('.bloodstock');
 let bloodspage = document.querySelector('#bloodstock');
 let button = document.querySelector('.buttonformore');
 button.addEventListener('click', function() {
-    // if (bloods.style.display === "block"){
-    //     bloods.style.display = "none";
-    //     bloodspage.style.height = "1000px";
-    // } else{
-    //     bloods.style.display = "block";
-    //     bloodspage.style.height = "650px";
-
-    // }
     alert("under maintenance")
 });
 
@@ -56,29 +38,21 @@ function showSchedule(){
 }
 
 let moresch = document.querySelector("#moreschedule");
-// console.log(schedule.length);    
-// var schedule = document.getElementsByClassName('tbcontent');
 let schedule = document.querySelector('.tbcontent');
 var schedul = document.getElementsByClassName("tbcontent");
 
 moresch.addEventListener('click', function(){
     var i;
-    alert("masuk");
-    // for (i=2; i<=schedul.length; i++){
-    //     schedul[i].style.display = "none";
-    // }
     if (schedul[4].style.display === 'none'){
-        alert("true");
+        document.getElementById("moreee").innerHTML = "tampilkan lebih sedikit";
         for (i=4; i<= schedul.length; i++){
             schedul[i].style.display = 'flex';
         }
-        // schedul[3].style.display = "none";
     } else if (schedul[4].style.display = "flex") {
-        alert("false");
+        document.getElementById("moreee").innerHTML = "tampilkan lebih banyak";
         for (i=4; i<= schedul.length; i++){
             schedul[i].style.display = "none";
         }
-        document.getElementById("moreee").innerHTML = "tampilkan kurang";
     } 
 
     alert("under maintenance")
@@ -86,23 +60,11 @@ moresch.addEventListener('click', function(){
 })
 
 function less(){
-    // var schedul = document.getElementsByClassName("tbcontent");
     for (i=4; i<= schedul.length; i++){
         schedul[i].style.display = "none";
-        // document.getElementsByClassName("tbcontent")[4].style.display = "none";
     }
 }
 less();
-
-
-// moresch.addEventListener('click', function(){
-//     alert(schedule.length);
-//     alert("masuk");
-//     for (i=1; i<= schedule.length; i++){
-//     schedule[i].style.display = "none";}
-// });
-
-
 function openpage(){
     alert("halaman ini sedang dalam masa perkembangan");
     document.getElementById("maintenance").style.display = "none";
@@ -110,6 +72,3 @@ function openpage(){
 }
 
 var openbutton = document.getElementsByClassName("keepliat");
-// openbutton.addEventListener('click',function(){
-//     maintenancepage.style.display = "none";
-// })

@@ -302,7 +302,8 @@ a{
     color: white;
     display: none;
     padding: 7%;
-    /* transition: 1s; */
+    /* background-color: blue; */
+    transition: 1s;
     /* padding: 80px; */
     /* text-align: center; */
   }
@@ -426,11 +427,10 @@ a{
 /* page 4 */
 
 #donationschedule{
-    /* border-width: 5px;
-    border-style: solid;
-    border-color: black; */
+    /* border: 5px solid black; */
+    padding-bottom: 20px;
     position: relative;
-    height: fit-content;
+    height: 100%;
     width: 100%;
     padding-top: 6%; ;
     background-color: white;
@@ -514,6 +514,7 @@ a{
 .jadwal-container{
     margin: 0 auto;
     width: 70vw;
+    position: relative;
     height: fit-content;
     /* padding: ; */
     /* background-color: aqua; */
@@ -645,6 +646,8 @@ a{
 
 #moreschedule{
     margin: 0 auto;
+    position: relative;
+    margin-top: 20px;
     display: flex;
     /* position: absolute; */
     /* bottom: 0; */
@@ -660,6 +663,8 @@ a{
     font-weight: bold;
     font-size: 1.5vw;
     transition: 0.5s;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 #moreschedule:hover{
