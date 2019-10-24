@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html{
@@ -76,7 +77,6 @@ a{
     margin-top: 10%;
     max-width: 40%;
     min-width: 40px;
-    /* opacity: 0.8; */
     filter: brightness(80%);
     transition: 0.5s;
 }
@@ -84,7 +84,6 @@ a{
 .eachbutton:hover{
     transition: 0.5s;
     cursor: pointer;
-    /* opacity: 1; */
     filter: brightness(100%);
     max-width: 50%;
     min-width: 50px;
@@ -118,10 +117,10 @@ a{
 }
 
 .landingtext{
+    z-index: 1;
     padding-left: 1%;
     padding-top: 20%;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 3vw;    
 }
 
@@ -136,8 +135,6 @@ a{
     padding-top: 6%;
     background-color: black;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    /* display: flex; */
     position: relative;
 }
 
@@ -154,7 +151,6 @@ a{
     font-size: 3vw;
     font-weight: bold;
     padding-top: 1vw;
-    /* margin-bottom: ; */
 }
 
 .bloodstock{
@@ -210,12 +206,10 @@ a{
 .buttonformore{
     width: 100%;
     height: 5vw;
-    /* background-color: red; */
     position: absolute;
     display: flex;
     bottom: 10vw;
     margin: 0 auto;
-    /* text-align: center; */
     align-items: center;
 }
 
@@ -223,18 +217,15 @@ a{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    /* border: 1px solid rgb(190, 190, 190); */
     border: none;
     background-color: rgba( 0,0,0,0);
     background-color: rgba(207, 207, 207,0.05);
     margin: 0 auto;
     width: 15vw;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.5vw;
     height: 4vw;
-    /* transition: 0.5s; */
 }
 
 #lessmore p{
@@ -252,7 +243,6 @@ a{
     width: 100%;
     height: 750px;
     background-color: white;
-    /* border: 2px solid grey; */
 }
 
 .donationprocedure{
@@ -260,7 +250,6 @@ a{
     height: 100%;
     top: 0;
     left: 0;
-    /* background-color: rgb(161, 2, 2); */
 }
 
 #donationprocedure h1{
@@ -271,7 +260,6 @@ a{
     margin-left: 20px;
     margin-bottom: 20px;
     font-size: 4vw;
-    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -297,27 +285,19 @@ a{
 
 /* Slides */
 .mySlides {
-    font-family: Arial, Helvetica, sans-serif;
     z-index: 99;
     color: white;
     display: none;
     padding: 7%;
-    /* background-color: blue; */
     transition: 1s;
-    /* padding: 80px; */
-    /* text-align: center; */
   }
 
   .slidetitle{
       font-size: 1.5vw;
       font-weight: bold;
-      /* display: flex;
-      margin-top: 10px;
-      align-items: center; */
 
       height: 0.7vw;
       padding-bottom: 15%;
-      /* margin-bottom: 7%; */
   }
 
   .slidecontent{
@@ -325,7 +305,6 @@ a{
   }
   
   .slidebutton{
-        /* background-color: violet; */
         width: 100%;
         height: 25%;
         position: absolute;
@@ -339,9 +318,7 @@ a{
     .prev, .next {
         cursor: pointer;
         position: absolute;
-        /* bottom: 5%; */
         width: auto;
-        /* margin-top: -30px; */
         padding: 16px;
         color: #888;
         font-weight: bold;
@@ -382,7 +359,6 @@ a{
     background-color: #888;
     border-radius: 1vw;
     display: inline-block;
-    /* transition: background-color 0.6s ease; */
     transition: 0.3s;
   }
   
@@ -399,12 +375,11 @@ a{
   }
   
 
-#quotesjelek{
+#quotes{
     position: relative;
     z-index: 1;
     margin: 0 auto;
     bottom: 0;
-    /* margin-top: 42vw; */
     width: 85%;
     height: 10vw;
     border-radius: 15px;
@@ -415,10 +390,9 @@ a{
     display: flex;
 }
 
-#quotesjelek p{
+#quotes p{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 3vw;
     font-weight: bold;
     margin: auto;
@@ -427,23 +401,19 @@ a{
 /* page 4 */
 
 #donationschedule{
-    /* border: 5px solid black; */
-    padding-bottom: 20px;
+    padding-top: 6%;
+    padding-bottom: 4vw;
     position: relative;
-    height: 100%;
     width: 100%;
-    padding-top: 6%; ;
+    height: 100%;
     background-color: white;
-    /* border: 2px solid black; */
 }
 
 #dstitle{
     color: rgba(200,13,13,1);
     font-size: 4vw;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     text-shadow: 5px 5px 0px rgba(0,0,0,0.3);
-    /* margin-top: 27%; */
     margin-bottom: 3%;
 }
 
@@ -467,14 +437,11 @@ a{
     position: absolute;
     top: 20%;
     align-items: center;
-    /* background-color: royalblue; */
 }
 #kalimat{
     font-size: 5vw;
     font-family: monospace;
     color: white;
-    /* top: 30%; */
-    /* position: absolute; */
     margin: 0 auto;
     text-align: center;
 }
@@ -483,20 +450,16 @@ a{
 .buttoncontainer{
     bottom: 30%;
     position: absolute;
-    /* left: 0; */
     width: 100%;
     height: 10vw;
-    /* background-color: rgb(255, 230, 0); */
     display: flex;
     align-items: center;
 }
 .keepliat{
-    /* left: 50%; */
     width: 20%;
     height: 5vw;
     background-color: rgba(200,13,13,1);
     border-radius: 1vw;
-    /* position: absolute; */
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -507,7 +470,6 @@ a{
     color: white;
     font-weight: bold;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
@@ -516,8 +478,6 @@ a{
     width: 70vw;
     position: relative;
     height: fit-content;
-    /* padding: ; */
-    /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -532,7 +492,7 @@ a{
     width: 350px;
     display: flex;
     position: relative;
-    border-radius: 18px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 5px 5px 0px rgba(153, 153, 153, 0.7);
 }
@@ -555,7 +515,6 @@ a{
     position: relative;
     font-weight: bold;
     font-stretch: ultra-condensed;
-    font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
 }
 
@@ -568,25 +527,23 @@ a{
     margin-bottom: 7px;
     margin-left: 10px;
     border-radius: 18px;
-    background: url('/asset/bgContact.png');
+    background: url('/asset/default-img.png');
     background-size: cover;
     background-position: center; 
+    box-shadow: 0px 1px 3px black;
 }
 #description{
-    width: 60%;
-    height: 25%;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 220px;
+    height: 35px;
     display: flex;
     position: absolute;
-    margin-left: 35%;
-    top: 25%;
+    margin-left: 125px;
+    top: 40px;
     text-overflow: ellipsis;
-    /* white-space: nowrap; */
     overflow: hidden;
 }
 
 .location, .jadwal{
-    /* background-color:  red; */
     width: 60%;
     height: 20%;
     display: flex;
@@ -598,7 +555,6 @@ a{
 
 .jadwal{
     top: 75%;
-    /* background-color: black; */
 }
 
 .jadwalicon{
@@ -631,7 +587,6 @@ a{
     font-size: 0.9vw;
     width: 100%;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     color: black;
 }
 
@@ -645,26 +600,22 @@ a{
 }
 
 #moreschedule{
-    margin: 0 auto;
-    position: relative;
-    margin-top: 20px;
-    display: flex;
-    /* position: absolute; */
-    /* bottom: 0; */
-    align-items: center;
-    /* border: 1px solid rgb(190, 190, 190); */
-    border: none;
     width: 15vw;
     height: 4vw;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: none;
     background-color: rgba(200,13,13,1);
     border-radius: 1vw;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     transition: 0.5s;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 #moreschedule:hover{
@@ -678,7 +629,7 @@ a{
 /* page 5 */
 #contactus{
     width: 100%;
-    height: 600px;
+    height: 580px;
     position: relative;
     background:url('/asset/bgContact.png');
     background-size: cover; 
@@ -694,23 +645,19 @@ a{
     width: 100%;
     height: 100%;
     position: absolute;
-    /* align-items: center;; */
 }
 .form-container{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 30%;
-    height: fit-content;
-    /* background-color: yellow; */
+    width: 400px;
+    height: 500px;
     margin: 0 auto;
     z-index: 1;
     overflow: hidden;
 }
 
 .formtitle{
-    /* background-color: blue; */
     width: 100%;
-    height: 10%;
+    height: 50px;
     top: 0;
     left: 0;
     display: flex;
@@ -720,7 +667,7 @@ a{
 }
 
 .formtitle h1{
-    font-size: 3vw;
+    font-size: 40px;
     margin: 0 auto;
 }
 
@@ -730,36 +677,36 @@ a{
 
 .email, .nama, .pesan{
     width: 100%;
-    height: 2vw;
+    height: 30px;
     padding: 0;
-    border-radius: 0.3vw;
-    padding-left: 0.5vw;
-    margin-bottom: 0.5vw;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin-bottom: 5px;
 }
 
 .pesan{
-    height: 13vw;
-    padding: 0.5vw;
+    height: 195px;
+    padding: 5px;
 }
 
 .email:focus , .nama:focus, .pesan:focus{
     background-color: rgb(230, 230, 230);
 }
-
+/* 
 .buttonplacer{
     width: 100%;
     align-items: center;
     display: flex;
-}
+} */
+
 .form-container button{
     width: 100%;
     background-color: rgba(200,13,13,1);
     padding: 0;
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 1vw;
-    height: 3vw;
+    font-size: 15px;
+    height: 40px;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -769,12 +716,11 @@ a{
 }
 
 .sosmedcontainer{
-    /* background-color: red; */
     position: absolute;
     margin: 0 auto;
-    height: 13%;
-    width: 30%;
-    /* left: 50%; */
+    height: fit-content;
+    width: 400px;
+    background-color: blue;
     bottom: 0;
     display: flex;
     align-items: center;
@@ -783,11 +729,8 @@ a{
 .instagram{
     margin: 0 auto;
     display: flex;
-    width: 50%;
+    width: 200px;
     height: 5vw;
-    /* left: 50%; */
-    /* position: absolute; */
-    /* background-color: royalblue; */
     align-items: center;
 }
 
@@ -795,20 +738,16 @@ a{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    /* position: relative; */
-    width: 50%;
+    width: 200px;
     height: 5vw;
-    /* right: 50%; */
-    /* position: absolute; */
-    /* background-color: seagreen; */
 
 }
 
 .iglogo, .twlogo{
     margin-left: 10px;
     position: absolute;
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 40px;
+    width: 40px;
     background: url("/asset/instagram\ \(1\).png");
     background-size: cover;
     background-position: center;
@@ -818,11 +757,13 @@ a{
 
 .twlogo{
     background: url("/asset/twitter.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .sosmedcontainer a{
     margin-left: 60px;
-    font-size: 1vw;
+    font-size: 15px;
     font-family: monospace;
     color: lightblue;
 }
