@@ -19,13 +19,14 @@
             <img class="navlogo" src="asset/logo pmi.png">
         </li>
         <li>
-            <a>SISTEM INFORMASI PMII</a>
+            <a>SISTEM INFORMASI PMI</a>
         </li>
         </ul>
     </nav>
 
     <!-- floating button -->
     <div class="floatingbutton">
+        <img src="/asset/Group 37.png" class="eachbutton" alt="" onclick="extendfab()" id="fabextender">
         <img src="/asset/Group 59.png" class="eachbutton" alt="" onclick="window.location.href='#landingpage'">
         <img src="/asset/Group 60.png" class="eachbutton" alt="" onclick="window.location.href='#bloodstock'">
         <img src="/asset/Group 61.png" class="eachbutton" alt="" onclick="window.location.href='#donationprocedure'">
@@ -54,29 +55,26 @@
         <div class="bloodstock">
             <div class="goldarA" >
                 <h1>Golongan Darah A</h1>
-                <h2>331</h2>
+                <h2 id="GdA">205</h2>
                 <h3>Kantong</h3>
             </div>
                 
             <div class="goldarAB" >
                     <h1>Golongan Darah AB</h1>
-                    <h2>331</h2>
+                    <h2 id="GdAB">75</h2>
                     <h3>Kantong</h3>
             </div>
             <div class="goldarB" >
                 <h1>Golongan Darah B</h1>
-                <h2>331</h2>
+                <h2 id="GdB">191</h2>
                 <h3>Kantong</h3>
             </div>
                 
             <div class="goldarO" >
                     <h1>Golongan Darah O</h1>
-                    <h2>331</h2>
+                    <h2 id="GdO">279</h2>
                     <h3>Kantong</h3>
             </div>
-        </div>
-        <div class="buttonformore" >
-            <div id="lessmore"><p>Lihat Detail</p></div>
         </div>
     </section>
 
@@ -161,10 +159,10 @@
         <div class="jadwal-container">
         <div class="tbcontent">
             <div id="title">
-                <p>satu</p>
+                <p>Donor Darah, Untuk Hidup yang Lebih Sehat</p>
             </div>
-            <div id="img"></div>
-            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <img src="/asset/dtb-gelar-donor-darah-800-2019-08-09-143116_0.jfif" class="img" alt="">
+            <div id="description"><p>Dengan donor darah, tubuh jadi menyeimbangkan dengan kebutuhan dan akan menjadi lebih fit</p></div>
             <div class="location">
                 <div class="locationicon"></div>
                 <div class="garis"></div>
@@ -184,10 +182,10 @@
         </div>
         <div class="tbcontent">
             <div id="title">
-                <p>dua</p>
+                <p>Yuk, Donor!</p>
             </div>
-            <div id="img"></div>
-            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <img src="/asset/s9uplkid3sdwue68l9m7.jpg" class="img" alt="">
+            <div id="description"><p>Menyumbangkan darah melalui donor darah dapat menyelamatkan satu kehidupan, atau bahkan beberapa nyawa sekaligus.</p></div>
             <div class="location">
                 <div class="locationicon"></div>
                 <div class="garis"></div>
@@ -207,10 +205,10 @@
         </div>
         <div class="tbcontent">
             <div id="title">
-                <p>tiga</p>
+                <p>Give Blood, Save Life #DONORFORLIFE</p>
             </div>
-            <div id="img"></div>
-            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <img src="/asset/shutterstock_551697772.jpg" class="img" alt="">
+            <div id="description"><p>Setiap delapan detik, ada satu orang yang membutuhkan transfusi darah di Indonesia. </p></div>
             <div class="location">
                 <div class="locationicon"></div>
                 <div class="garis"></div>
@@ -230,10 +228,10 @@
         </div>
         <div class="tbcontent">
             <div id="title">
-                <p>empat</p>
+                <p>AKSI SOLIDARITAS #PRAYFORPALU</p>
             </div>
-            <div id="img"></div>
-            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <img src="/asset/bolehkah-orang-kurus-donor-darah.jpg" class="img" alt="">
+            <div id="description"><p>Mari kita bantu korban bencana palu dengan cara mendonor untuk saudara kita yang membutuhkan</p></div>
             <div class="location">
                 <div class="locationicon"></div>
                 <div class="garis"></div>
@@ -256,7 +254,7 @@
             <div id="title">
                 <p>lima</p>
             </div>
-            <div id="img"></div>
+            <div class="img"></div>
             <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
             <div class="location">
                 <div class="locationicon"></div>
@@ -279,7 +277,7 @@
             <div id="title">
                 <p>enam</p>
             </div>
-            <div id="img"></div>
+            <div class="img"></div>
             <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
             <div class="location">
                 <div class="locationicon"></div>
@@ -339,7 +337,11 @@
         
     </section>
 
+    <script src="/Javascript/counterup.js"></script>
     <script src="/Javascript/kasinamasendiri.js"></script>      
+    <script src="/Javascript/quotesslider.js"></script>
+    <script src="/Javascript/moreschedule.js"></script>
+    <script src="/Javascript/fabextender.js"></script>
     </body>
 </html>
 

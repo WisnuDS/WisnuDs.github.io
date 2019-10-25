@@ -74,6 +74,7 @@ a{
 }
 
 .eachbutton{
+    display: none;
     margin-top: 10%;
     max-width: 40%;
     min-width: 40px;
@@ -91,6 +92,16 @@ a{
 
 .eachbutton:active{
     opacity: 2;
+}
+
+#fabextender{
+display: flex;
+border: none;
+}
+
+#fabextender:active{
+    filter: brightness(150%);
+    transition: filter 2s;
 }
 
 /* page belum digarap */
@@ -203,30 +214,7 @@ a{
     font-size: 17px;
 }
 
-.buttonformore{
-    width: 100%;
-    height: 5vw;
-    position: absolute;
-    display: flex;
-    bottom: 10vw;
-    margin: 0 auto;
-    align-items: center;
-}
 
-#lessmore{
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    border: none;
-    background-color: rgba( 0,0,0,0);
-    background-color: rgba(207, 207, 207,0.05);
-    margin: 0 auto;
-    width: 15vw;
-    color: white;
-    font-weight: bold;
-    font-size: 1.5vw;
-    height: 4vw;
-}
 
 #lessmore p{
     margin: 0 auto;
@@ -518,7 +506,7 @@ a{
     text-transform: capitalize;
 }
 
-#img{
+.img{
     width: 106px;
     height: 106px;
     display: flex;
@@ -701,12 +689,12 @@ a{
 
 .form-container button{
     width: 100%;
+    height: 40px;
     background-color: rgba(200,13,13,1);
     padding: 0;
     border: none;
     color: white;
     font-size: 15px;
-    height: 40px;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -716,12 +704,10 @@ a{
 }
 
 .sosmedcontainer{
+    width: 400px;
     position: absolute;
     margin: 0 auto;
-    height: fit-content;
-    width: 400px;
-    background-color: blue;
-    bottom: 0;
+    height: 70px;
     display: flex;
     align-items: center;
 }
@@ -766,4 +752,12 @@ a{
     font-size: 15px;
     font-family: monospace;
     color: lightblue;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    #contactus{
+        min-height: max-content;
+    }
 }
