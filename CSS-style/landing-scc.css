@@ -140,7 +140,6 @@ border: none;
 
 #bloodstock{
     top: 30%;
-    position: absolute;
     width: 100%;
     height: 650px;
     padding-top: 6%;
@@ -312,7 +311,7 @@ border: none;
         font-weight: bold;
         font-size: 20px;
         border-radius: 0 3px 3px 0;
-        user-select: none;
+        /* user-select: none; */
     }
     
     /* Position the "next button" to the right */
