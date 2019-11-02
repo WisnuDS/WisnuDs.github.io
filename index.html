@@ -6,17 +6,371 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Testing</title>
     <link rel="stylesheet" href="CSS-style/landing-scc.css">
+    
 </head>
+
 <body>
+    <div class="paddingtop"></div>
+    
+    <!-- navigation bar -->
     <nav>
-        <img src="asset/logo pmi-13.png">
-        <p>SISTEM INFORMASI PMI</p>
-    </nav>
-    <div class = content>
-        <h1>Donor Darah</h1>
-        <h1>Menyelamatkan Jiwa</h1>
+        <ul>
+        <li>
+            <img class="navlogo" src="asset/logo pmi.png">
+        </li>
+        <li>
+            <a>SISTEM INFORMASI PMII</a>
+        </li>
+        </ul>
+    </nav>  
+
+    <!-- floating button -->
+    <div class="floatingbutton">
+        <img src="/asset/Group 59.png" class="eachbutton" alt="" onclick="window.location.href='#landingpage'">
+        <img src="/asset/Group 60.png" class="eachbutton" alt="" onclick="window.location.href='#bloodstock'">
+        <img src="/asset/Group 61.png" class="eachbutton" alt="" onclick="window.location.href='#donationprocedure'">
+        <img src="/asset/Group 65.png" class="eachbutton" alt="" onclick="window.location.href='#donationschedule'">
+        <img src="/asset/Group 64.png" class="eachbutton" alt="" onclick="window.location.href='#contactus'">
     </div>
-    <div class="darah">
-       
-    </div>
+
+
+    <!-- page 1 -->
+    <section id="landingpage">
+        <div class="landingpage">        
+            <div class="landingtext">
+                <h1>Donor darah</h1>
+                <h2>Selamatkan Jiwa</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- page 2 -->
+    <section id="bloodstock">
+        <div class="bsheader">
+            
+            <img class="logopmi" src="asset/logo pmi.png">
+            <p class="persediaandarah">Persediaan Darah</p>
+        </div>
+        <div class="bloodstock">
+            <div class="goldarA" >
+                <h1>Golongan Darah A</h1>
+                <h2>331</h2>
+                <h3>Kantong</h3>
+            </div>
+                
+            <div class="goldarAB" >
+                    <h1>Golongan Darah AB</h1>
+                    <h2>331</h2>
+                    <h3>Kantong</h3>
+            </div>
+            <div class="goldarB" >
+                <h1>Golongan Darah B</h1>
+                <h2>331</h2>
+                <h3>Kantong</h3>
+            </div>
+                
+            <div class="goldarO" >
+                    <h1>Golongan Darah O</h1>
+                    <h2>331</h2>
+                    <h3>Kantong</h3>
+            </div>
+        </div>
+        <div class="buttonformore" >
+            <div id="lessmore"><p>Lihat Detail</p></div>
+        </div>
+    </section>
+
+    <!-- page 3 -->
+    <section id="donationprocedure">
+        <div class="donationprocedure">
+            <h1>PROSEDUR DONOR DARAH</h1>
+            <img src="/asset/undraw_doctors_hwty.png">
+            <div id="slideshow-container">
+                <div class="mySlides">
+                    <p class="slidetitle">1.Tahap Registrasi</p>
+                    <p class="slidecontent">Mengisi formulir pendaftaran dan kuisioner kesehatan</p>
+                  </div>
+
+                <div class="mySlides">
+                    <p class="slidetitle">2.Tahap Pemeriksaan Pendahuluan</p>
+                    <p class="slidecontent">-Pengukuran berat badan</p>
+                    <p class="slidecontent">-Pemeriksaan kadar haemoglobin darah</p>
+                    <p class="slidecontent">-Pemeriksaan golongan darah bagi pendonor pemula</p>
+                </div>
+
+                <div class="mySlides">
+                    <p class="slidetitle">3.Tahap Pemeriksaan Kesehatan oleh Dokter</p>
+                    <p class="slidecontent">-Anamnesis</p>
+                    <p class="slidecontent">-Pemeriksaan tekanan darah</p>
+                    <p class="slidecontent">-Pemeriksaan fisik sederhana</p>
+                </div>
+                
+                <div class="mySlides">
+                    <p class="slidetitle">4.Tahap Pengambilan Darah Donor</p>
+                    <p class="slidecontent">-Cuci lengan donor</p>
+                    <p class="slidecontent">-Pengambilan darah</p>
+                    <p class="slidecontent">-Pengambilan sampel darah</p>
+                </div>
+
+                <div class="mySlides">
+                    <p class="slidetitle">5.Tahap Administrasi</p>
+                    <p class="slidecontent">Mengambil kartu donor dan vitamin</p>
+                </div>
+
+
+                <div class="mySlides">
+                    <p class="slidetitle">6.Tahap Pemulihan</p>
+                    <p class="slidecontent">Pendonor dianjurkan untuk istirahat dan menikmati hidangan ringan yang kami sajikan</p>
+                </div>
+                    
+                      
+                <div class="slidebutton">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                      <div class="dot-container">
+                          <span class="dot" onclick="currentSlide(1)"></span>
+                          <span class="dot" onclick="currentSlide(2)"></span>
+                          <span class="dot" onclick="currentSlide(3)"></span>
+                          <span class="dot" onclick="currentSlide(4)"></span>
+                          <span class="dot" onclick="currentSlide(5)"></span>
+                          <span class="dot" onclick="currentSlide(6)"></span>
+                      </div>
+                  </div>
+                </div>
+
+                <div id="quotes" >
+                    <p>"Setetes Darah Sangat Berarti"</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- page 4 -->
+    <section id="donationschedule">
+        <!-- <div id="maintenance">
+            <div class="kalimatcontainer">
+                    <p id="kalimat">Uppps.. <br>this page is under maintenance :(</p>
+            </div>
+            
+            <div class="buttoncontainer">
+                <div class="keepliat" onclick="openpage()"><p>Buka</p></div>
+            </div>
+        </div> -->
+        <div>
+            <h1 id="dstitle">Jadwal Donor</h1>
+        </div>
+        <div class="jadwal-container">
+        <div class="tbcontent">
+            <div id="title">
+                <p>satu</p>
+            </div>
+            <div id="img"></div>
+            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="location">
+                <div class="locationicon"></div>
+                <div class="garis"></div>
+                <div class="tempat">
+                    <p>Jl.Kalimantan No.13</p>
+                    <p>(Double Way Unej)</p>
+                </div>
+            </div>
+            <div class="jadwal">
+                <div class="jadwalicon"></div>
+                <div class="garis"></div>
+                <div class="tanggal">
+                    <p>2 Okt 2018</p>
+                    <p>09.00-13.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="tbcontent">
+            <div id="title">
+                <p>dua</p>
+            </div>
+            <div id="img"></div>
+            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="location">
+                <div class="locationicon"></div>
+                <div class="garis"></div>
+                <div class="tempat">
+                    <p>Jl.Kalimantan No.13</p>
+                    <p>(Double Way Unej)</p>
+                </div>
+            </div>
+            <div class="jadwal">
+                <div class="jadwalicon"></div>
+                <div class="garis"></div>
+                <div class="tanggal">
+                    <p>2 Okt 2018</p>
+                    <p>09.00-13.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="tbcontent">
+            <div id="title">
+                <p>tiga</p>
+            </div>
+            <div id="img"></div>
+            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="location">
+                <div class="locationicon"></div>
+                <div class="garis"></div>
+                <div class="tempat">
+                    <p>Jl.Kalimantan No.13</p>
+                    <p>(Double Way Unej)</p>
+                </div>
+            </div>
+            <div class="jadwal">
+                <div class="jadwalicon"></div>
+                <div class="garis"></div>
+                <div class="tanggal">
+                    <p>2 Okt 2018</p>
+                    <p>09.00-13.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="tbcontent">
+            <div id="title">
+                <p>empat</p>
+            </div>
+            <div id="img"></div>
+            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="location">
+                <div class="locationicon"></div>
+                <div class="garis"></div>
+                <div class="tempat">
+                    <p>Jl.Kalimantan No.13</p>
+                    <p>(Double Way Unej)</p>
+                </div>
+            </div>
+            <div class="jadwal">
+                <div class="jadwalicon"></div>
+                <div class="garis"></div>
+                <div class="tanggal">
+                    <p>2 Okt 2018</p>
+                    <p>09.00-13.00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tbcontent">
+            <div id="title">
+                <p>lima</p>
+            </div>
+            <div id="img"></div>
+            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="location">
+                <div class="locationicon"></div>
+                <div class="garis"></div>
+                <div class="tempat">
+                    <p>Jl.Kalimantan No.13</p>
+                    <p>(Double Way Unej)</p>
+                </div>
+            </div>
+            <div class="jadwal">
+                <div class="jadwalicon"></div>
+                <div class="garis"></div>
+                <div class="tanggal">
+                    <p>2 Okt 2018</p>
+                    <p>09.00-13.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="tbcontent">
+            <div id="title">
+                <p>enam</p>
+            </div>
+            <div id="img"></div>
+            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="location">
+                <div class="locationicon"></div>
+                <div class="garis"></div>
+                <div class="tempat">
+                    <p>Jl.Kalimantan No.13</p>
+                    <p>(Double Way Unej)</p>
+                </div>
+            </div>
+            <div class="jadwal">
+                <div class="jadwalicon"></div>
+                <div class="garis"></div>
+                <div class="tanggal">
+                    <p>2 Okt 2018</p>
+                    <p>09.00-13.00</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="buttondiv">
+            <div id="moreschedule"><p id="moreee">Tampilkan Lebih Banyak</p></div>
+        </div>
+    </section>
+
+    <!-- page 5 -->
+    <section id="contactus">
+        <div class="cpoverlay"></div>
+        <div class="form-container">
+            <div class="formtitle">
+                <h1>Contact Us</h1>
+            </div>
+            
+            <form>
+                <p>Email:</p>
+                <input class="email" type="email"><br>
+                <p>Nama:</p>
+                <input class="nama" type="text"><br>
+                <p>Pesan:</p>
+                <textarea class="pesan"></textarea>
+            </form>
+            <div class="buttonplacer" onclick="windows.location.href='http://www.google.com'">
+            <button>KIRIM</button>
+            </div>
+            <div class="sosmedcontainer">
+                <div class="twitter" onclick="location.href='http://www.google.com'">
+                    <div class="twlogo" ></div>
+                        <a href="https://twitter.com/palangmerah">@palangmerah</a>
+                    
+                </div>
+                <div class="instagram">
+                    <div class="iglogo"></div>
+                    <a href="http://www.https://www.instagram.com/palangmerah_indonesia/">@palangmerah_indonesia</a>
+                </div>
+        </div>
+        </div>
+
+        
+    </section>
+
+    <script src="/Javascript/kasinamasendiri.js"></script>      
+    </body>
 </html>
+
+
+
+
+
+        <!-- mentahan -->
+
+        <!-- <div id="tbcontent">
+            <div id="title">
+                <p>title</p>
+            </div>
+            <div id="img"></div>
+            <div id="description"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+            <div class="location">
+                <div class="locationicon"></div>
+                <div class="garis"></div>
+                <div class="tempat">
+                    <p>Jl.Kalimantan No.13</p>
+                    <p>(Double Way Unej)</p>
+                </div>
+            </div>
+            <div class="jadwal">
+                <div class="jadwalicon"></div>
+                <div class="garis"></div>
+                <div class="tanggal">
+                    <p>2 Okt 2018</p>
+                    <p>09.00-13.00</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!--  mentahan end -->
