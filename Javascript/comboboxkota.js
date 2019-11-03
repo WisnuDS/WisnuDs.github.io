@@ -5,9 +5,6 @@ $.get('../indonesia.json', async function(data) {
 
 
 function comboboxkota(){
-    if (typeof dataKota == 'undefined'){
-
-    }
     let indexSelected = $('#ddlProvinsi').val();
     let listDataKota = dataKota[indexSelected]
     $('#ddlKota').find('option').remove().end().append('<option value="0">- Pilih Kota -</option>')

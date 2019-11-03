@@ -1,4 +1,4 @@
-var extended = false;
+var extended = true;
 function extendfab(){
     var fabutton = document.getElementsByClassName('eachbutton');
     var fab = document.getElementById("fabextender");
@@ -7,8 +7,7 @@ function extendfab(){
         extended = true;
         for (var i =1; i <= fabutton.length; i++) {
             fabutton[i].style.display = 'flex';    
-        }
-        
+        } 
     } else{
         fab.style.transform = 'rotate(0deg)';
         extended = false;
