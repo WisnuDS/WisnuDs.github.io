@@ -75,9 +75,100 @@
                     <h2 id="GdO">279</h2>
                     <h3>Kantong</h3>
             </div>
+            
+            <div class="btnHolder">
+                <button type="submit" id="btnCekDarah">Cek Detail</button>
+            </div>
+            
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div>
+                        <div class="modalForm">
+                        <!-- <form class="modalForm"> -->
+                            <select name="ddlProvinsi" id="ddlProvinsi" class="form-control" onchange="comboboxkota()">
+                                <option value="0" selected>- Pilih Provinsi -</option>
+                                <option value="1">Aceh</option>
+                                <option value="2">Sumatera Utara</option>
+                                <option value="3">Sumatera Barat</option>
+                                <option value="4">Riau</option>
+                                <option value="5">Jambi</option>
+                                <option value="7">Bengkulu</option>
+                                <option value="6">Sumatera Selatan</option>
+                                <option value="8">Lampung</option>
+                                <option value="10">Kepulauan Riau</option>
+                                <option value="9">Kepulauan Bangka Belitung</option>
+                                <option value="16">Banten</option>
+                                <option value="12">Jawa Barat</option>
+                                <option value="11">DKI Jakarta</option>
+                                <option value="13">Jawa Tengah</option>
+                                <option value="15">Jawa Timur</option>
+                                <option value="14">Daerah Istimewa Yogyakarta</option>
+                                <option value="17">Bali</option>
+                                <option value="18">Nusa Tenggara Barat</option>
+                                <option value="19">Nusa Tenggara Timur</option>
+                                <option value="20">Kalimantan Barat</option>
+                                <option value="22">Kalimantan Selatan</option>
+                                <option value="21">Kalimantan Tengah</option>
+                                <option value="23">Kalimantan Timur</option>
+                                <option value="26">Sulawesi Selatan</option>
+                                <option value="27">Sulawesi Tenggara</option>
+                                <option value="24">Sulawesi Utara</option>
+                                <option value="28">Gorontalo</option>
+                                <option value="30">Maluku</option>
+                                <option value="33">Papua Barat</option>
+                                <option value="32">Papua</option>
+                                <option value="31">Maluku Utara</option>
+                                <option value="25">Sulawesi Tengah</option>
+                            </select>
+                            <select name="ddlKota" id="ddlKota" class="form-control">
+                                <option selected="selected" value="0">- Pilih Kota -</option>
+                            </select>
+                            <button class="btnPersediaan" onclick="modalCounter()">Cek Persediaan</button>
+                        </div>
+                        <div class="flexBox">
+                            <div class="card">
+                                <div class="container">
+                                    <h1>A</h1>
+                                    <p>Persediaan Darah : </p> 
+                                    <p id="modalGDA">0</p> 
+                                    <p>Kantung</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container">
+                                    <h1>B</h1>
+                                    <p>Persediaan Darah : </p> 
+                                    <p id="modalGDB">0</p> 
+                                    <p>Kantung</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container">
+                                    <h1>AB</h1>
+                                    <p>Persediaan Darah : </p> 
+                                    <p id="modalGDAB">0</p> 
+                                    <p>Kantung</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="container">
+                                    <h1>O</h1>    
+                                    <p>Persediaan Darah : </p> 
+                                    <p id="modalGDO">0</p> 
+                                    <p>Kantung</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </section>
+    
 
     <!-- page 3 -->
     <section id="donationprocedure">
@@ -337,12 +428,15 @@
 
         
     </section>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/Javascript/counterup.js"></script>
     <script src="/Javascript/kasinamasendiri.js"></script>      
     <script src="/Javascript/quotesslider.js"></script>
     <script src="/Javascript/moreschedule.js"></script>
     <script src="/Javascript/fabextender.js"></script>
+    <script src="Javascript/indonesia.js"></script>
+    <script src="/Javascript/comboboxkota.js"></script>
+    <script src="/Javascript/modalpopup.js"></script>
     </body>
 </html>
 
