@@ -504,7 +504,7 @@ a{
 
 #title{
     background-color: rgba(200,13,13,1);
-    height: 30px;
+    height: 150px;
     width: 100%;
     position: relative;
     text-align: center;
@@ -515,6 +515,7 @@ a{
 
 #title p{
     font-size: 20px;
+    padding: 2px;
     color: white;
     margin: auto;
     position: relative;
@@ -537,13 +538,19 @@ a{
     background-position: center; 
     box-shadow: 0px 1px 3px black;
 }
+
+.tbcontent img{
+    width: 180px;
+}
+
 #description{
-    width: 220px;
-    height: 35px;
+    width: 180px;
     display: flex;
     position: absolute;
-    margin-left: 125px;
-    top: 40px;
+    margin-left: 165px;
+    padding: 10px;
+    font-size: 10px;
+    top: 22px;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -553,7 +560,7 @@ a{
     height: 20%;
     display: flex;
     position: absolute;
-    margin-left: 35%;
+    margin-left: 50%;
     top: 55%;
     align-items: center;
 }
@@ -681,7 +688,7 @@ a{
 }
 
 .email, .nama, .pesan{
-    width: 100%;
+    width: 97%;
     height: 30px;
     padding: 0;
     border-radius: 5px;
@@ -878,25 +885,6 @@ a{
     padding: 2px 16px;
 }
 
-@media only screen and (max-width:1262px){
-    .btnHolder{
-        margin-top: 13%;
-    }
-}
-@media only screen and (max-width:970px){
-    .btnHolder{
-        margin-top: 18%;
-    }
-    .landingpage{
-        margin-top: 0%;
-    }
-
-}
-@media only screen and (max-width:842px){
-    .btnHolder{
-        margin-top: 19%;
-    }
-}
 @media only screen and (max-width:772px){
     .btnHolder{
         margin-top: 0%;
@@ -904,10 +892,7 @@ a{
     .bloodstock{
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
         align-items: center;
-        align-content: space-around;
     }
     .goldarA{
         margin: 0%;
@@ -932,28 +917,22 @@ a{
     .logopmi{
         width: 120px;
     }
+    .email, .nama, .pesan{
+        width: 95%;
+    }
+    .form-container button{
+        width: 98%;
+    }
 }
-@media only screen and (max-width:550px){
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: stretch;
+@media screen and (max-width:1024px){
+    #btnCekDarah{
+        margin-top: 32%;
     }
-    nav ul li a{
-        font-size: 20pt;
+}
+@media screen and (max-width:768px){
+    #bloodstock{
+        height: 680px;
     }
-    .navlogo{
-        width: 50px;
-        height: 45px;
-    }
-    .landingtext{
-        text-align: center;
-        font-size: 5vw;
-    }
-
 }
 @media only screen and (max-width:600px){
     .flexBox{
@@ -985,57 +964,28 @@ a{
         z-index: 0;
     }
 }
-/* width 320px */
-@media screen and (max-width:320px){
+@media only screen and (max-width:550px){
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    nav ul li a{
+        font-size: 20pt;
+    }
+    .navlogo{
+        width: 50px;
+        height: 45px;
+    }
+    .landingtext{
+        text-align: center;
+        font-size: 5vw;
+    }
+
+}
+@media screen and (max-width:425px){
     .landingpage{
         height: 160px;
         padding-top:10%;
-    }
-    #bloodstock{
-        height: 500px;
-    }
-    .persediaandarah{
-        font-size: 18px;
-    }
-    .goldarA h1{
-        font-size: 16px;
-    }
-    .goldarA h2{
-        font-size: 16px;
-    }
-    .goldarA h3{
-        padding-left: 2px;
-        font-size: 14px;
-    }
-    .goldarAB h1{
-        font-size: 16px;
-    }
-    .goldarAB h2{
-        font-size: 16px;
-    }
-    .goldarAB h3{
-        padding-left: 2px;
-        font-size: 14px;
-    }
-    .goldarB h1{
-        font-size: 16px;
-    }
-    .goldarB h2{
-        font-size: 16px;
-    }
-    .goldarB h3{
-        padding-left: 2px;
-        font-size: 14px;
-    }
-    .goldarO h1{
-        font-size: 16px;
-    }
-    .goldarO h2{
-        font-size: 16px;
-    }
-    .goldarO h3{
-        padding-left: 2px;
-        font-size: 14px;
     }
     #donationprocedure{
         padding-top: 30px;
@@ -1093,6 +1043,7 @@ a{
         height: 90px;
         border-radius: 5px;
         font-weight: 700;
+        margin-left: 67%;
     }
     #donationschedule{
         height: 700px;
@@ -1171,5 +1122,69 @@ a{
     .instagram a{
         margin-left: 25px;
         font-size: 12px;
+    }
+}
+@media screen and (max-width:375px){
+    #description{
+        margin-left: 170px;
+    }
+    nav ul li a{
+        font-size: 19px;
+    }
+}
+@media screen and (max-width:368px){
+    #description{
+        margin-left: 65%;
+    }
+}
+@media screen and (max-width:320px){
+    #bloodstock{
+        height: 500px;
+    }
+    .persediaandarah{
+        font-size: 18px;
+    }
+    .goldarA h1{
+        font-size: 16px;
+    }
+    .goldarA h2{
+        font-size: 16px;
+    }
+    .goldarA h3{
+        padding-left: 2px;
+        font-size: 14px;
+    }
+    .goldarAB h1{
+        font-size: 16px;
+    }
+    .goldarAB h2{
+        font-size: 16px;
+    }
+    .goldarAB h3{
+        padding-left: 2px;
+        font-size: 14px;
+    }
+    .goldarB h1{
+        font-size: 16px;
+    }
+    .goldarB h2{
+        font-size: 16px;
+    }
+    .goldarB h3{
+        padding-left: 2px;
+        font-size: 14px;
+    }
+    .goldarO h1{
+        font-size: 16px;
+    }
+    .goldarO h2{
+        font-size: 16px;
+    }
+    .goldarO h3{
+        padding-left: 2px;
+        font-size: 14px;
+    }
+    #description{
+        margin-left: 130px;
     }
 }
